@@ -1,0 +1,97 @@
+testing is the process to validate the clients requirements.
+
+
+how to test
+monkey testing - (Random testing)
+gorilla testing - 
+
+
+test scenerios -  
+positive
+negative
+alternate 
+exceptional
+
+test condition is the bridge between test scenerio and test case.
+
+SDLC is important to provide a good quality product or application.
+
+
+6 quality attritutes
+portability
+efficiency
+realible
+functionality
+usability
+maintainability
+
+
+
+
+sldc
+requirement
+design
+development
+testing
+implementing
+maintainence
+
+
+
+
+
+BLC(bug life cycle) also known as defect life cycle
+
+N - new
+C - closed
+R - re-open
+tester
+
+p - postponed
+d - deffered
+f - fixed or resolved
+developer
+
+o - open
+r - retest
+r - rejected
+test lead
+
+p - pending retest
+a - assigned
+p - pending reject
+dev lead
+
+HotFix
+in-progress
+
+tester (new)  ---> test lead(open)
+dev lead ---> developer(assigned)
+
+
+DRM/DTM (defect triace meeting)  -- discussion about the defects with the stakeholders
+triage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

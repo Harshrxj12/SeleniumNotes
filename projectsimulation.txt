@@ -1,0 +1,44 @@
+thanks aditya
+
+i am harsh raj and i am working as database developer in this project
+
+so, now i'll be talking about some challenges faced during our project creation and  how we overcome them
+
+so the primary challenge we faced 
+
+database consistency and redundancy   -  maintaining a consistent database and working with duplicate 
+data is a very problematic task, 
+for dealing with this problem we introduced normalization 
+concept which helps us to make database consistent and reduce redundancy.
+
+
+the next challenge we faced 
+
+data security and storage efficiency - protecting sensitive data and ensuring data storage is secure and efficient.
+
+for that we have introduced encryption in our database, which enhances the data security and efficiency.
+
+
+and the next challenge is 
+
+high traffic management - sometimes during travel season we may face high users on our webpage 
+due to which it may cause stability issues for which wehave 
+introduced scalable infrastructure with auto scaling cloud services and handle high traffic.
+
+
+and the last challenege we faced 
+
+api integration complexity - intregrating different api's for different purposes is a difficult task 
+due to different standards due to which
+we have introduced standard data formats like json , xml. which helps in intregrating different api's.
+
+
+now to the next slide
+
+feedback of the project  - this mail is sent by the client representative to the project manager giving her feedback about 
+the successful completion of the project and appreciating the team's work and collaboration.
+
+
+and to the next slide - 
+
+

@@ -1,0 +1,20 @@
+WebDriverWait mywait = new WebDriverWait(driver,Duration.ofSeconds(10));
+
+mywait.until(ExpectedCondition.AlertIsPresent).accept();
+
+
+
+
+select name from students where id = 1;
+
+select name, id from students 
+order by id desc;
+
+
+
+
+Harsh Raj has clear understanding of Java, SQL, Selenium. He was able to answer all the questions that were asked and also able to
+ write syntaxes that were asked. Able to explain the project that he has worked on. 
+His communication is good and he is bit confident on the items he knows. 
+Deeper understanding in the Java and Selenium concepts and also had experience in hands on. 
+The only area he needs to focus is the Functional Testing concepts and different Test Design techniques.

@@ -1,0 +1,73 @@
+Waterfall Model
+A linear and sequential approach where each phase must be completed before the next begins.
+phases - (SDLC PHASES)
+requirements analysis
+system design (design phase)
+development
+testing 
+deployment -  integration
+maintainence
+
+Adv 
+Quality of the product is good
+since requirement change is not allowed,chances of finding bugs is less
+prefered for small projects where requirement is freezed.
+
+dis adv
+requirement change is not allowed
+defect in requirement continues is the next phases.
+testing is only starts after coding
+
+
+Spiral model
+
+Spiral model is also called iterative model, in which it overcomes the drawback of waterfall model.
+One cycle will contain all the 4 phases(planning(requirement analysis), risk analysis( design), design and development, testing(evaluation)	
+After completion of cycle one the software is delivered to the customer.
+software is released in multiple version. so this is called version control model.
+
+Adv 
+testing is done on every cycle 
+customer willget to use the software for every module.
+requirement changes are allowed after every cycle.
+	
+Dis adv
+requirement change is not allowed in between,
+every cycle of spiral model looks like waterfall model
+there is no testing in requirement and desgning phase
+
+
+V model
+The V-Model (short for Verification and Validation Model) is a software development method where every step of building the software has a matching 
+test step. 
+it exyends the  feature of traditional waterfall model by allowing testing and validation in each phase of the development stage.
+Imagine the letter V:
+
+The left side is where you plan and design.
+
+The right side is where you test and check.
+
+The bottom point is where you write the code
+
+adv 
+testing is done in each and every pahses
+defects arefound early
+emphasizes early test planing
+
+
+dis adv 
+not suitable for complex and iterative projects
+documentation and early investment is more.
+not flexible to changes
+
+
+
+
+Validation and verification
+
+Verification checks whether  we are building the right product.
+it focuses on documnetation
+it invloves 
+reviews
+walkthrough
+inspections

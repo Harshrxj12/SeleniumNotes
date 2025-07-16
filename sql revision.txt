@@ -1,0 +1,170 @@
+ -----> You cannot use aggregate functions directly inside the WHERE clause. For example, this is invalid:
+
+----->> Yes, you can absolutely use WHERE with GROUP BY in SQL.
+
+SQL (Structured Query Language) is divided into several language types,
+
+1. Data Query/Retrieval Language (DQL)
+Used to retrieve data from the database.
+SELECT – Retrieves data from one or more tables.
+
+
+2. Data Definition Language (DDL)
+Used to define and manage database structure.
+
+CREATE –     Creates database objects (tables, views, etc.)
+ALTER –      Modifies existing database objects.
+DROP – 	 Deletes database objects.
+TRUNCATE –	 Removes all records from a table (faster than DELETE).
+
+3. Data Manipulation Language (DML)
+Used to manipulate data within tables.
+
+INSERT – Adds new records.
+UPDATE – Modifies existing records.
+DELETE – Removes records.
+
+4. Data Control Language (DCL)
+Used to control access to data.
+
+GRANT – Gives user access privileges.
+REVOKE – Removes access privileges.
+
+5. Transaction Control Language (TCL)
+Used to manage transactions in a database.
+
+COMMIT – Saves changes.
+ROLLBACK – Undoes changes.
+SAVEPOINT – Sets a point to rollback to.
+SET TRANSACTION – Defines properties for a transaction.
+
+
+
+
+
+DELETE
+Removes some rows from a table.
+You can choose which rows to delete using a condition (WHERE).
+The table stays there, just with fewer rows.
+
+
+TRUNCATE
+Removes all rows from a table — clears it completely.
+You can't choose specific rows.
+The table structure stays, but it's empty.
+Usually faster than DELETE.
+
+DROP
+Deletes the entire table — data and structure.
+After this, the table is gone from the database.
+You can't undo it.
+
+
+
+Command	What it does	Can choose rows?	Table stays?	Can undo?
+DELETE	Removes some rows	    ✅ Yes	        ✅ Yes	       ✅ Yes
+TRUNCATE	Removes all rows	    ❌ No	        ✅ Yes	      ⚠️ Maybe
+DROP	      Deletes whole table	No             ❌ No	           ❌ No
+
+
+
+
+Key Features of a Primary Key:
+Unique – No two rows can have the same value in the primary key column.
+Not Null – It must always have a value; it can’t be empty.
+One per table – Each table can have only one primary key.
+
+
+A foreign key is a column (or set of columns) in one table that links to the primary key in 
+another table. It’s used to create a relationship between two tables.
+
+
+
+WHERE
+Used to filter rows before grouping or aggregation.
+Works with regular columns (not aggregate functions like COUNT, SUM, etc.).
+
+HAVING
+Used to filter groups after aggregation.
+Works with aggregate functions like COUNT(), AVG(), etc.
+
+
+Normalization in SQL is the process of organizing data in a database to reduce redundancy (repeated data) and improve
+ data integrity. 
+It involves dividing large tables into smaller, related tables and defining relationships between them.
+🎯 Goals of Normalization
+Eliminate duplicate data
+Ensure data dependencies make sense
+Make the database easier to maintain
+
+
+
+A JOIN in SQL is used to combine rows from two or more tables based on a related column between them — usually a foreign key.
+
+📌 Why Use JOINs?
+To get complete information that is spread across multiple tables.
+
+Types of JOINs in SQL
+Type	                                 Description
+INNER JOIN	                        Returns only rows that have matching values in both tables.
+LEFT JOIN (or LEFT OUTER JOIN)	Returns all rows from the left table, and matched rows from the right table.
+RIGHT JOIN (or RIGHT OUTER JOIN)	Returns all rows from the right table, and matched rows from the left table.
+FULL JOIN (or FULL OUTER JOIN)	Returns all rows when there is a match in one of the tables.
+
+
+
+The difference between UNION and UNION ALL in SQL is all about duplicates:
+
+🔹 UNION
+Combines results from two or more SELECT queries.
+Removes duplicate rows from the final result.
+Slightly slower because it checks for duplicates.
+
+
+ UNION ALL
+Also combines results from multiple SELECT queries.
+Keeps all rows, including duplicates.
+Faster because it doesn’t check for duplicates.
+
+
+ What is a Subquery?
+A subquery is a query inside another query. It’s used to get data that helps the outer query.
+
+
+A JOIN connects two tables based on a related column (like a foreign key) and returns combined rows.
+
+
+Key Differences 
+Feature	Subquery	                   JOIN
+Structure	Query inside another query	Combines rows from multiple tables
+Performance	Can be slower for large data	Usually faster with proper indexing
+Readability	Easier for simple filters	Better for showing combined data
+Use Case	Filtering based on another table	Displaying related data together
+
+
+Difference Between GROUP BY and ORDER BY
+Feature		GROUP BY						ORDER BY
+Purpose		Groups rows that have the same values	Sorts the result set
+Used With		Aggregate functions (COUNT, SUM, etc.)	Any column or expression
+Output		One row per group	All rows,			 just sorted
+Example 		Use	Summarizing data					Sorting data
+
+
+
+
+A constraint in SQL is a rule applied to a column or table to control the type of data that can be stored. Constraints help maintain data accuracy, consistency, and integrity.
+
+🔒 Common Types of Constraints
+Constraint		Description
+PRIMARY KEY		Uniquely identifies each row in a table. Cannot be NULL.
+FOREIGN KEY		Links one table to another. Ensures data matches a primary key in another table.
+NOT NULL		Ensures a column cannot have NULL (empty) values.
+UNIQUE		Ensures all values in a column are different.
+CHECK			Ensures values meet a specific condition.
+DEFAULT		Sets a default value for a column if no value is provided.
+
+
+DISTINCT - DISTINCT keyword is used within the SELECT statement to retrieve unique
+values from a column or combination of columns.
+
+

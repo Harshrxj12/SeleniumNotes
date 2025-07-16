@@ -1,0 +1,72 @@
+Select max(salary) from employee
+where salary NOT IN (
+	Select salary from employee order by desc limit 4;
+);
+
+
+select salary from employee order by salary desc limit 1 offset 4;
+
+
+emp -> emp_id,emp_name
+dept -> emp_id,dept_name
+
+select e.emp_name,d.dept_name from emp e
+left join
+dept d on
+e.emp_id = d.emp_id
+union
+select e.emp_name,d.dept_name from emp e
+right join 
+dept d on
+e.emp_id = d.emp_id;
+
+
+select year(current_date) - year(dob) as age, firstname from employee
+where age>=30;
+
+
+HashSet<INTEGER> set = new HashSet<>();
+HashMap<Integer,String> set = new HashMap<>();
+
+write a query to display distinct salary in a table
+select distinct(count(salary)) from employee;
+
+write the query to find the second highest salary
+
+select salary from employee order by salary desc limit 1 offset 1;
+
+
+select max(salary) from employee where salary not in (
+select max(salary) from employee
+);
+
+
+select e.employeename , e.number, d.deptname, d.deptnumber from employee e
+left join dept d
+on e.eid = d.eid;
+
+
+write a query tofind nth highest salary
+
+
+SELECT DISTINCT salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET N-1;
+
+
+print the name of employee having the highest salary in each dept
+
+select name, dept, salary from worker
+group by dept
+having max(salary);
+
+
+
+SELECT name, dept, salary
+FROM worker w
+WHERE salary = (
+    SELECT MAX(salary)
+    FROM worker
+    WHERE dept = w.dept
+);

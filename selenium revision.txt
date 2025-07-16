@@ -1,0 +1,85 @@
+Execution Order of TestNG Annotations
+
+@BeforeSuite – Runs once before all tests in the suite.
+@BeforeTest – Runs before any test method belonging to the <test> tag in testng.xml.
+@BeforeClass – Runs before the first method in the current class.
+@BeforeMethod – Runs before each test method.
+@Test – The actual test method.
+@AfterMethod – Runs after each test method.
+@AfterClass – Runs after all test methods in the current class.
+@AfterTest – Runs after all test methods in the <test> tag.
+@AfterSuite – Runs once after all tests in the suite.
+
+
+What is DataProvider in Selenium?
+DataProvider is a feature in TestNG (a testing framework used with Selenium) that allows you to run the same 
+test method multiple times with different sets of data. 
+It supports data-driven testing, which is useful for testing the same functionality with various inputs.
+
+
+What is a Dropdown in Selenium?
+"A dropdown is a UI element that allows users to select one option from a list. In Selenium, 
+we handle dropdowns using the Select class provided by the org.openqa.selenium.support.ui package. 
+This class provides methods to select and deselect options by visible text, index, or value."
+
+
+JavaScriptExecutor is an interface in Selenium WebDriver that lets us run JavaScript code in the context of the currently loaded page.
+ It's very helpful when
+ WebDriver methods like click() or sendKeys() don’t work due to dynamic content, hidden elements, or custom JavaScript behavior on the page."
+
+In Selenium, JavaScriptExecutor is an interface that allows you to execute JavaScript code directly within the browser from your Selenium script. 
+It’s especially useful when certain actions cannot be performed using standard WebDriver methods.
+
+
+What is TestNG?
+"TestNG is a testing framework inspired by JUnit and NUnit, 
+designed for test automation in Java. The 'NG' stands for 'Next Generation'. 
+It provides powerful features like annotations, grouping, prioritization, parallel execution, and data-driven testing, 
+which make it ideal for managing Selenium test cases efficiently."
+
+🧠 Why Do We Use TestNG in Selenium?
+"We use TestNG in Selenium to organize and control the execution of test cases. 
+It helps us define test workflows using annotations like @Test, @BeforeMethod, @AfterMethod, etc. It also supports features like running tests in parallel, skipping tests, retrying failed tests,
+ and generating detailed HTML reports. This makes our test automation more scalable and maintainable."
+
+
+In Selenium, an alert is a small pop-up window that appears on the browser to display a message or request user input. 
+These are JavaScript alerts, and they are not part of the HTML DOM,
+ so you can't inspect them using developer tools like regular web elements.
+
+✅ Types of Alerts in Selenium
+Simple Alert – Just shows a message and an OK button.
+Confirmation Alert – Shows a message with OK and Cancel buttons.
+Prompt Alert – Asks for user input with a text box, OK, and Cancel buttons.
+
+Alerts are handled using driver.switchTo().alert().
+You must switch to the alert before interacting with it.
+Useful for handling unexpected pop-ups or confirmation dialogs.
+
+
+
+Why Do We Cast WebDriver?
+"In Selenium, we cast the WebDriver instance to interfaces like JavascriptExecutor or 
+TakesScreenshot because these interfaces are not directly part of the WebDriver interface. Although the actual driver classes like ChromeDriver or 
+FirefoxDriver implement these interfaces, we need to explicitly cast to access their specialized methods."
+
+
+disadv of selenium
+
+1. We can not test it in mobile
+2. Report generation is not done by selenium, for that we have to use third party dependencies like testng
+3. captcha and bar code is not validated by selenium
+
+
+Common Selenium Element Exceptions
+Exception Name				What It Means	Example Scenario
+NoSuchElementException			Element not found on the page	Trying to find an element that doesn’t exist
+ElementNotVisibleException		Element is present but not visible	Element is hidden with CSS or not yet loaded
+StaleElementReferenceException	Element is no longer attached to the DOM	Page refreshed or element updated after locating
+ElementClickInterceptedException	Another element is blocking the click	A popup or overlay is covering the button
+InvalidSelectorException		The locator syntax is wrong	Using incorrect XPath or CSS selector
+TimeoutException				Waited too long for an element or condition	Using explicit wait but element didn’t appear
+NoSuchFrameException			Frame not found	Trying to switch to a frame that doesn’t exist
+NoSuchWindowException			Window or tab not found	Trying to switch to a closed or non-existent window
+
+

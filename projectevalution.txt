@@ -1,0 +1,57 @@
+How do you implement a responsive design using CSS?
+Answer:
+
+Responsive design ensures that a website looks and functions 
+well across a variety of devices and screen sizes—from desktops to 
+mobile phones. We implement it in CSS using a combination of:
+
+Media Queries: These allow us to apply specific styles based on 
+device characteristics like width, height, or orientation. For example:
+
+Flexible Grid or Layout Systems: Using Flexbox or CSS Grid to create fluid 
+layouts that can adjust automatically.
+
+Relative Units: Instead of using fixed pixels, 
+we use units like %, em, rem so elements scale more naturally.
+
+Responsive Images and Media: Using techniques like max-width: 
+100% to make images scale within containers.
+
+
+What is the difference between position: relative, absolute, and fixed?
+Answer:
+
+These values of the position property determine how an element is positioned within the document flow:
+
+relative: The element remains in the normal document flow but can be 
+offset using top, left, etc. The space originally occupied by the element is preserved.
+
+absolute: The element is removed from the normal flow and 
+positioned relative to the nearest positioned ancestor (i.e., the nearest ancestor with 
+position not equal to static). If there’s no such ancestor, it's positioned relative to the <html> element.
+
+fixed: The element is positioned relative to the viewport, 
+so it stays in the same place even when the page is scrolled. 
+Commonly used for sticky headers or floating buttons.
+
+
+How do you manage CSS for large-scale projects to avoid conflicts?
+Answer:
+
+In large projects, managing CSS efficiently is crucial to avoid 
+specificity issues, naming collisions, and scalability problems. Best practices include:
+
+CSS Naming Conventions: Using patterns like BEM (Block Element Modifier) 
+ensures clarity and avoids conflicts. For example: .btn, .btn--primary, .card__header.
+
+Modular CSS Architecture:
+Split styles into component-based files.
+Keep global styles minimal and isolated.
+
+Preprocessors: Tools like SASS or LESS allow nesting, 
+variables, and mixins—helping keep the code DRY and organized.
+
+Use of CSS Modules or Scoped Styles: In component-driven frameworks like React or Vue, 
+CSS Modules ensure styles are scoped to components, preventing leakage.
+
+Linting and Style Guides: Tools like Stylelint enforce consistency and best practices across the team.
