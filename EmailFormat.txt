@@ -2,8 +2,10 @@ TO: starting the email with TO(whom we have to sent the email and we expect repl
 cc: the persons who we want in the loop
 bcc: the persons mentioned due to some reason(like training or something)
 
-Hi/Dear ms/mr(lastt name)
-or hi first name
+subject : the reason in less words.
+
+Hi/Dear Ms/Mr (last name)
+or hi, first name
 
 pleasentry---(I hope this email finds you well)
 
